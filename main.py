@@ -17,8 +17,19 @@ for addreses, dirs, files in os.walk("."):
 """
 #secret = exifHeader.hide('images.jpeg','images1.jpeg', "testing...")
 
-
+'''
 res = exifHeader.reveal("images1.jpeg")
 res = res.decode()
 print(res)
+'''
 
+'''lock = exifHeader.reveal('mountain.jpg').decode()
+buff = 512*1024
+pyAesCrypt.encryptFile('mountain.jpg', 'mountain.jpg.lol',lock, buff)
+os.remove('mountain.jpg')
+'''
+ 
+passw = 'testing'
+buff = 512*1024
+pyAesCrypt.decryptFile('mountain.jpg.aes', 'mountain.jpg', passw, buff)
+os.remove('mountain.jpg.aes')
